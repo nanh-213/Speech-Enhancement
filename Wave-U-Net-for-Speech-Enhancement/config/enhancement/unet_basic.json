@@ -1,0 +1,20 @@
+{
+    "model": {
+        "module": "model.unet_basic",
+        "main": "UNet",
+        "args": {}
+    },
+    "dataset": {
+        "module": "dataset.waveform_dataset_enhancement",
+        "main": "WaveformDataset",
+        "args": {
+            "dataset": "/content/drive/MyDrive/CompressionAssignment1/Wave-U-Net-for-Speech-Enhancement/noisy_list_opus.txt",
+            "limit": 400,
+            "offset": 0,
+            "sample_length": 16384
+        }
+    },
+    "custom": {
+        "sample_length": 16384
+    }
+}

@@ -16,8 +16,9 @@ project/
 ├── scripts/                                           # data preparation scripts
 ├── testCase/                                          # sample audio for testing
 ├── Wave-U-Net-for-Speech-Enhancement/                 # Wave-U-Net architecture
-├── weights/                                           # trained models (8k, 16k)
+├── weights/                                           # trained models 8k, 16k (download link in section 7)
 ├── inference.py                                       # inference script
+├── requirements.txt                                   # List of required libraries
 └── README.md
 ```
 
@@ -117,10 +118,11 @@ bitrate="16k"
 | **Channels Interval** | 24 |
 | **Sample Rate** | 16,000 Hz (Mono) |
 | **Input Length** | Multiple of 4096 samples (Auto-padded during inference) |
-| **Weights Used** | `weights/model_0150_8k.pth`, `weights/model_0150_16k.pth` |
+| **Weights Used** | [weights/model_0150_8k.pth](https://drive.google.com/file/d/1X0P7hvt3vHy_8hmp8QyVdDphpBBBGbRG/view?usp=drive_link), [weights/model_0150_16k.pth](https://drive.google.com/file/d/1xONAK2sYaZGXuU8WA4SvewzicIg8cVC5/view?usp=sharing) |
 | **Environment** | Python 3.8+, `torch`, `librosa`, `soundfile`, `ffmpeg` |
 
 ### 7.2. How to Run Code & Reproduce Results
+**Please download the weights and place them in the weights/ folder before running inference.**
 
 **A. Quick Reproduce (Inference Only)**
 
@@ -151,4 +153,4 @@ python inference.py
 
 * The project does not include the dataset due to storage limitations.
 * All steps are automated through scripts to ensure reproducibility.
-* Pretrained model weights for 8 kbps and 16 kbps are included in the `weights/` folder.
+* Please download the weights and place them in the weights/ folder before running inference.
